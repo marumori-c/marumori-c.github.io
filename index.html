@@ -16,7 +16,6 @@
    </div>
    <!--section-1-end-->
 
-
    <!--section-2-->
    <div id="video-banner" class="container-fluid p-0">
    	<video preload="auto" autoplay="" muted="muted" volume="0" class="w-full" loop="">
@@ -40,7 +39,7 @@
          	<div class="col-md-10 offset-md-1">
          		<div class="row">
          			<div class="col-md-12">
-				         <h1 class="display-6 fw-bold">一建設専用CG作成サービス</h1>
+				         <h1 class="display-6 fw-bold">ジャパンホームシールドCG作成サービス</h1>
          			</div>
          		</div>
          		<div class="row mt-3">
@@ -51,7 +50,7 @@
 			            <a href="#movie" class="btn btn-danger btn-lg fs-4 btn-block">2. CG動画制作</a>
          			</div>
          			<div class="d-grid gap-2 col-md-4">
-			            <a href="#vr" class="btn btn-danger btn-lg fs-4 btn-block">3. VR制作</a>
+			            <a href="#vr" class="btn btn-danger btn-lg fs-4 btn-block">3. シミュレーションVR制作</a>
          			</div>
          		</div>
          	</div>
@@ -313,7 +312,6 @@
          			<div class="col-md-10 offset-md-1">
          				<p class="text-start fs-5 mt-2">
          					建築予定地の写真と完成イメージを切り替え<br>
-         					（ビフォー VR です。立ち位置を変えて 2 アングルまで作成します。<br>
          					お客様に完成イメージをわかりやすく伝えます。VR ゴーグル対応、QR コー ド付。<br>
 								<span class="text-danger fs-08">※１.CG パース制作のご依頼が必須となります</span>
          				</p>
@@ -487,9 +485,234 @@
    <!-- FLOW-END -->
 	<!-- --------------------------------------------------------------------------------------------------- -->
 
+	<!-- --------------------------------------------------------------------------------------------------- -->
+   <!-- FAQ -->
+   <!--section-5-->
+   <br>
+   <div class="container-fluid mt-5 py-4" style="background-color: #f5f5f5;">
+      <div class="container">
+			<!-- row -->
+         <div class="row">
+         	<div class="col-md-10 offset-md-1">
+         		<div class="row">
+         			<div class="col-md-12">
+         				<br>
+         				<div class="border-bottom border-danger border-3 position-relative mt-5">
+         					<span class="title-service fs-3 fw-bold">よくある質問</span>
+         				</div>
+         			</div>
+         		</div>
+         	</div>
+	      </div>
+			<!-- row-end -->
+
+			<!-- row -->
+         <div class="row">
+         	<div class="col-md-10 offset-md-1">
+         		<div class="row">
+         			<div class="col-md-10 offset-md-1">
+
+							<!-- row -->
+							<div v-if="i <= currentFaq" v-for="(faq, i) in faqs" class="row mt-4">
+								<div class="col-md-12">
+									<b><u v-html="faq.t"></u></b>
+									<b class="pe-2">Q.</b><span v-html="faq.q"></span>
+									<br>
+									<b class="pe-2">A.</b><span v-html="faq.a"></span>
+									<span v-html="faq.o"></span>
+								</div>
+							</div>
+							<!-- row-end -->
+
+							<div v-if="faqs.length > isAllowMoreFaq" class="row mt-5">
+								<div class="col-md-12 text-center">
+									<button @click="increaseFaq" class="btn btn-danger btn-lg">もっと見る</button>
+								</div>
+							</div>
+
+         			</div>
+         		</div>
+         	</div>
+	      </div>
+			<!-- row-end -->
+
+		<br><br>
+      </div>
+		<!-- container-end -->
+
+   </div>
+   <!--section-5-end-->
+   <!-- FAQ-END -->
+	<!-- --------------------------------------------------------------------------------------------------- -->
 
 
-   <br><br><br><br><br><br>
+	<!-- --------------------------------------------------------------------------------------------------- -->
+   <!-- NEW SERVICE -->
+   <!--section-6-->
+   <div class="container-fluid pt-5" style="background-image: url('assets/bg-arch2.jpg'); background-repeat: no-repeat; background-attachment: fixed;background-position: center;">
+      <div class="container">
+			<!-- row -->
+         <div class="row">
+         	<div class="col-md-10 offset-md-1">
+         		<div class="row">
+         			<div class="col-md-12">
+         				<br>
+         				<div class="border-bottom border-danger border-3 position-relative mt-5">
+         					<span class="title-service fs-4 fw-bold text-center">CGパース・ウォークスルー動画・シミュレーションVR等についてのサービス規定</span>
+         				</div>
+         			</div>
+         		</div>
+         	</div>
+	      </div>
+			<!-- row-end -->
+
+			<!-- row -->
+         <div class="row">
+         	<div class="col-md-10 offset-md-1">
+         		<div class="row">
+         			<div class="col-md-10 offset-md-1">
+
+							<!-- row -->
+							<div class="row mt-5">
+								<div class="col-md-12">
+									<p class="mb-5">
+										このサービス規定はジャパンホームシールド株式会社（以下「JHS」といいます。）が提供するCGパース・ウォークスルー動画・シミュレーションVR等のデジタルイメージコンテンツの制作サービス（以下「本サービス」といいます。）の利用条件を定めるものです。登録加盟店の皆さま（以下「事業者様」といいます。）には、本規定に従って，本サービスをご利用いただきます。
+									</p>
+									<p class="mb-5">
+										<b>（制作の委託）</b><br>
+										JHSは、本サービスのデジタルイメージコンテンツについて、マルモリカンパニー株式会社（以下「マルモリカンパニー」といいます。）へ制作を委託します。専門技術の分野において、事業者様の業務の効率化および事業者様の顧客に対するサービスの向上を図り、円滑に行うことを目的とします。
+									</p>
+									<p class="mb-5">
+										<b>（依頼物件）</b><br>
+										本サービスについてはJHSへの地盤調査依頼を頂いた物件のみ、お申し込みを頂けます。
+									</p>
+									<p class="mb-5">
+										<b>（依頼の方法）</b><br>
+										JHSが提供するWebサイト「JHSオンライン」へログイン頂き、調査依頼済物件を検索したうえで本サービスのご依頼商品を選択してください。依頼頂いた内容はJHS及びマルモリカンパニーへ、依頼日、加盟店番号、加盟店名、依頼担当者名、担当者電話番号、担当者メールアドレス、区分、物件番号、物件名、依頼商品、数量、希望納期等の情報がシステム発信されます。
+									</p>
+									<p class="mb-5">
+										<b>（必要図面）</b><br>
+										①	平面図 <br>
+										②	立面図 <br>
+										③	配置図 <br>
+										④	仕上げ表(外壁や玄関ドアなどの型番) <br>
+										⑤	Google Mapで検索できる現地住所 <br>
+										⑥	その他任意資料（外構図、画像資料、３Dデータなど）
+									</p>
+									<p class="mb-5">
+										<b>（依頼の応答）</b><br>
+										マルモリカンパニーから電話、メール又はChatworkを利用し、直接事業者様へ連絡します。初回の連絡以後は、主にChatworkを利用し、連絡関係および必要な情報、図面、現地写真等のやり取りを行います。
+									</p>
+									<p class="mb-5">
+										<b>（制作着手）</b><br>
+										電話、メール、又はChatworkにて作成についてのヒアリング、必要図面等を受け取り、制作着手となります。
+									</p>
+									<p class="mb-5">
+										<b>（アングル・形状チェック）</b><br>
+										作成途中の段階で制作アングルを確認頂きます。形状の修正はこの時点で指示をお願いします。
+									</p>
+									<p class="mb-5">
+										<b>（最終チェック）</b><br>
+										完成段階の成果物を提出致します。色味の調整など微細な修正については対応いたします。確認頂き問題がなければ納品とさせていただきます。
+									</p>
+									<p class="">
+										<b>（納品方法）</b>
+										<ul class="mb-5">
+											<li>CGパース・・Chatwork又はメール</li>
+											<li>ウォークスルー動画・・ 大容量データ転送サービス</li>
+											<li>シミュレーションVR・・ URL納品（マルモリカンパニーのサーバー上にデータ保管のため）</li>
+										</ul>
+									</p>
+									<p class="mb-5">
+										<b>（QRコードについて）</b><br>
+										ウォークスルー動画については、自社ホームページやYouTube等のデータアップ先を教えて頂ければ作成致します。QRコードの作成方法指導も可能です。シミュレーションVRはURL納品と共にQRコードをお付けします。
+									</p>
+									<p class="mb-5">
+										<b>（納品書及び納品受領）</b><br>
+										納品後、電子契約システム「<a href="https://www.cloudsign.jp/">クラウドサイン</a>」を使い、納品書を送ります。依頼物件ごとにクラウドサインのURLを案内いたします。受領ボタンを押していただくと受領完了となります。
+									</p>
+									<p>
+										<b>（キャンセルについて）</b><br>
+										制作着手以降はキャンセル費用が発生致します。
+										<ul class="mb-5">
+											<li>アングル・形状チェック提出前：制作費の25％</li>
+											<li>アングル・形状チェック提出以降：制作費の50％</li>
+											<li>最終チェック提出以降：制作費の100％</li>
+										</ul>
+									</p>
+									<p class="mb-5">
+										<b>（大幅な修正・変更について）</b><br>
+										アングルチェック後のチェックバック（修正指示）以降の、大幅な修正・変更は、再見積とさせていただきます。再見積の結果キャンセルとなった場合は、前項のキャンセル金額を適用致します。
+									</p>
+									<p class="mb-5">
+										<b>（非住宅建築物、大型建造物について）</b><br>
+										戸建住宅以外の非住宅建築物、大型建造物については、予めご相談ください。別途で見積致します。
+									</p>
+									<p class="mb-5">
+										<b>（著作権）</b><br>
+										CGパース・ウォークスルー動画・シミュレーションVR等制作データの著作権は<span class="text-danger">マルモリカンパニー</span>に帰属します。書面による許可なく、自社商品の販促、営業、提案以外で使用することは禁止致します。
+									</p>
+									<p>
+										<b>（禁止事項）</b>
+										<ol  class="mb-5">
+											<li>本サービスにて納品したデータを複製・加工して販売、配布、譲渡、貸与、その他二次利用行為等を行う事は禁じられています。</li>
+											<li>本サービスにて納品したデータは、商標・商号等に使用し、登録・登記することはできません。制作依頼された事業者様本人は納品データをホームページ等のコンテンツの一部として営利・非営利を問わずご利用頂けます。</li>
+											<li>本サービスにて納品したデータを公序良俗に反する目的で使用することを禁じます。</li>
+										</ol>
+									</p>
+									<p>
+										<b>（免責事項）</b><br>
+										<ol class="mb-5">
+											<li>本サービスにて納品したデータを使用した場合に、発生する如何なる不利益についてJHS及びマルモリカンパニーは一切の責任を負いません。</li>
+											<li>本規約の内容は改良のため予告無しで変更する場合があります。</li>
+											<li>当サイトの御利用につき、何らかのトラブルや損失・損害等につきましては一切責任を問わないものとします。</li>
+										</ol>
+									</p>
+									<p class="mb-5">
+										<b>（本ウェブサービス内容の変更等）</b><br>
+										当サイトについては事業者様に通知することなく本ウェブサービスの内容を変更し、または本ウェブサービスの提供を追加、変更、中断、終了することができるものとし、これによって事業者様に生じた損害について一切の責任を負いません。
+									</p>
+									<p class="mb-5">
+										<b>（利用規約の変更）</b><br>
+										JHSは、必要と判断した場合には事業者様に通知することなくいつでも本規約を変更することができるものとします。
+									</p>
+									<p class="mb-5">
+										<b>（個人情報の取り扱い）</b><br>
+										本サービスにおける個人情報の取り扱いに関しては、「<a href="https://www.j-shield.co.jp/privacy.htm">個人情報保護方針</a>」を適用するものとします。
+									</p>
+									<p class="mb-5">
+										<b>（合意管轄）</b><br>
+										本サービスにおいて生じた紛争について訴訟を提起するときは、東京地方裁判所を第一審の専属的合意管轄裁判所とする。
+									</p>
+
+								</div>
+							</div>
+							<!-- row-end -->
+
+         			</div>
+         		</div>
+         	</div>
+	      </div>
+			<!-- row-end -->
+
+		<br><br>
+      </div>
+		<!-- container-end -->
+
+   </div>
+   <!--section-6-end-->
+   <!-- NEW SERVICE-END -->
+	<!-- --------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+   
 	<!-- --------------------------------------------------------------------------------------------------- -->
 
 	<!-- --------------------------------------------------------------------------------------------------- -->
@@ -545,6 +768,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/faqs_data.js"></script>
 	<script src="js/vueinstance_v20210814_05.js"></script>
 
 </body>
