@@ -49,10 +49,17 @@ var app = new Vue({
             vidPreview: "d-none",
             vid: ""
         },
+        faqs: faqsData,
         pcHeight: 0,
         initialScroll: 0,
         scrollMenuNo: [false, false, false, false],
-        currentSection: 0
+        currentSection: 0,
+        currentFaq: 4
+    },
+    computed: {
+        isAllowMoreFaq() {
+            return this.currentFaq + 1
+        }
     },
     methods: {
         showImgPreview(e) {
@@ -111,6 +118,9 @@ var app = new Vue({
             this.scrollMenuNo[section] = true
             this.currentSection = section
 
+        },
+        increaseFaq() {
+            this.currentFaq +=4
         }
     },
     created() {
