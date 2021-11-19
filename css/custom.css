@@ -266,3 +266,12 @@
 .nav-item>button[aria-selected="true"] {
    color: #212529 !important;
 }
+
+@media only screen and (max-width: 1280px) {
+   .title-service {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-right: 0.75rem;
+   }
+}
