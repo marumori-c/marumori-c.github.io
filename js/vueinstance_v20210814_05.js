@@ -2,11 +2,11 @@ var app = new Vue({
     el: '#app',
     data: {
         cg: {
-            img1: "assets/img/cg/1-1.jpg",
-            img2: "assets/img/cg/1-2.jpg",
-            img3: "assets/img/cg/1-3.jpg",
-            img4: "assets/img/cg/1-4.jpg",
-            img5: "assets/img/cg/1-5.jpg"
+            img1: "assets/img/cg/2-1.jpg",
+            img2: "assets/img/cg/2-2.jpg",
+            img3: "assets/img/cg/2-3.jpg",
+            img4: "assets/img/cg/2-4.jpg",
+            img5: "assets/img/cg/2-5.jpg"
         },
         movie: {
             img1: "assets/img/movie/2-1.jpg",
