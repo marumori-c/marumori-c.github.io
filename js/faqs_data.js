@@ -1,7 +1,7 @@
 window.faqsData = [
     {
         t:'ご依頼について<br>',
-        q:'頼前にサンプルは見ることができますか？',
+        q:'依頼前にサンプルは見ることができますか？',
         a:'以下のURLからWeb上でサンプルをご覧になれます。',
         o:'<br><a href="https://marumori-c.github.io/">https://marumori-c.github.io/</a>'
     },
