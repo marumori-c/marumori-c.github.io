@@ -14,8 +14,8 @@ var app = new Vue({
             img3: "assets/img/movie/2-3.jpg",
             img4: "assets/img/movie/2-4.jpg",
             img5: "assets/img/movie/2-5.jpg",
-            vid1: "https://www.dropbox.com/s/evuc5mbfh1m6f1m/2-1.mp4?raw=1",
-            vid2: "https://www.dropbox.com/s/8mnprvqjt5fpfwg/2-2.mp4?raw=1",
+            vid1: "https://www.dropbox.com/s/8mnprvqjt5fpfwg/2-2.mp4?raw=1",
+            vid2: "https://www.dropbox.com/s/evuc5mbfh1m6f1m/2-1.mp4?raw=1",
             vid3: "https://www.dropbox.com/s/9aaley5mh5til36/2-3.mp4?raw=1",
             vid4: "https://www.dropbox.com/s/dfdzmqlp7ttont3/2-4.mp4?raw=1",
             vid5: "https://www.dropbox.com/s/qvb5tbxyjiq2jds/2-5.mp4?raw=1"
